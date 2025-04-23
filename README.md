@@ -22,7 +22,7 @@ Examples are available in the `./examples` folder, with Google Colab notebooks p
 
 | Model | Data | Filename | Link |
 | :---- | :---- | :---- | :---- |
-| MLP (Sigmoid) | Spiral Dataset | Spiral Sigmoid SigmaCam.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hIumz2lmjULSWqy7EDZc0LijIg1UhgQh?usp=sharing) |
+| MLP (Sigmoid) | Spiral Dataset | spiral_sigmoid_sigmacam.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hIumz2lmjULSWqy7EDZc0LijIg1UhgQh?usp=sharing) |
 | MLP (Sigmoid) | MNIST (Digit 2 vs 3) | mnist_binary.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_COLAB_MNIST_LINK) |
 | MLP (SiLU) | PneumoniaMNIST | pneumonia_mnist.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_COLAB_PNEUMONIA_LINK) |
 | MLP (SiLU) | Synthetic 3D Sphere | sphere_classification.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_COLAB_SPHERE_LINK) |
