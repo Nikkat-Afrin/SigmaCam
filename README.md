@@ -26,7 +26,8 @@ Examples are available in the `./examples` folder, with Google Colab notebooks p
 | MLP (Sigmoid) | MNIST (Digit 2 vs 3) | mnist_binary.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15-lAqQua9Q5oYl2NJiS0RL86efbN7Chs?usp=sharing) |
 | MLP (SiLU) | PneumoniaMNIST | pneumonia_mnist.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/188trnP4XmtNIuvsougGMfQKzEWu3XM1U?usp=sharing) |
 | MLP (SiLU) | Synthetic 3D Sphere | sphere_classification.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1twiGdHsaZ6H4yz4cZuAWw8HqkHmbZqDF?usp=sharing) |
-| MLP (SiLU) | Man Face | man_face _SiLU_2D_INR.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gJ4fRKg4pp7zMuJNjRXXMIgvHce_v4D1?usp=sharing) |
+| MLP (SiLU) | Man Face | man_face_SiLU_2D_INR.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gJ4fRKg4pp7zMuJNjRXXMIgvHce_v4D1?usp=sharing) |
+| MLP (SiLU) | Sphere Image | sphere_image_Periodic_encoding_INR.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15lTdQIty1HCInuurb9qJo6AsbtuEclkE?usp=sharing) |
 
 ## Usage
 
