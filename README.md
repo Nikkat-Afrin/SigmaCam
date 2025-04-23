@@ -72,6 +72,8 @@ numpy
 matplotlib
 tqdm
 scikit-learn
+imageio
+imageio-ffmpeg
 ```
 
 ## Installation
