@@ -39,21 +39,27 @@ Example usage:
 import torch
 import sigmacam
 
-# Define trained model
+# 1. Prepare your PyTorch model
 model = YourTrainedModel()
-model.cuda()
-model.eval()
+model.cuda(); model.eval()
 
-# Define your data domain and compute projection matrix and centroid
+# 2. Compute projection and centroid
+data = torch.tensor(...)  # shape (N, D)
 T, x0 = sigmacam.utils.get_projection_matrix_and_centroid(data)
 
-# Wrap the model for SigmaCam
-NN = sigmacam.wrapper(model, input_shape=model.input_shape, T=T, centroid=x0, device='cuda')
+# 3. Wrap your model
+NN = sigmacam.wrapper(model, input_shape=(D,), T=T, centroid=x0, device='cuda')
 
-# Compute and visualize decision boundaries
-regions, decision_boundary = sigmacam.compute_boundaries(NN, domain=data)
+# 4. Compute boundaries
+regions, boundary = sigmacam.compute_boundaries(NN, domain=data, grid_size=200)
 
-sigmacam.plot_boundaries(regions, decision_boundary)
+# 5. Plot
+fig, ax = sigmacam.plot_boundaries(regions, boundary)
+plt.show()
+
+# 6. (Optional) Record animation during training
+# mp4 = sigmacam.record_boundary_animation(NN, data, epochs=range(0,201), save_dir='anim', interval=10)
+# print(f"Animation saved at {mp4}")
 ```
 
 ## Requirements
