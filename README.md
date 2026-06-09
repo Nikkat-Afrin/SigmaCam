@@ -1,14 +1,16 @@
 # SigmaCam: Exact Decision Boundary Extraction for DNNs with Smooth Nonlinearities
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_COLAB_NOTEBOOK_LINK_HERE)
+[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-IJCNN%202025-00629B?logo=ieee&logoColor=white)](ADD_IEEE_XPLORE_LINK)
+[![Conference](https://img.shields.io/badge/IJCNN-2025-blue)](https://2025.ijcnn.org/)
 
-### [Paper Link](YOUR_PAPER_PDF_LINK_HERE) | [Website](YOUR_PROJECT_WEBSITE_LINK_HERE)
+### 📄 Published at **IEEE IJCNN 2025** — **[Read the paper on IEEE Xplore →](ADD_IEEE_XPLORE_LINK)**  ·  [Interactive Colab examples ↓](#examples)
+> *Follow-up work **SigmaCam++** is under review at IEEE TNNLS.*
 
 <img src="YOUR_MAIN_IMAGE_LINK_HERE" width="100%">
 
 Fig: Decision boundary extraction using SigmaCam for a spiral dataset demonstrating clear and smooth decision contours using Sigmoid and SiLU activations.
 
-#### Authors: Anonymous (to be updated post-acceptance)
+#### Authors: Nikkat Afrin (first author) *et al.* — IEEE IJCNN 2025
 
 **Abstract:** Understanding how a trained deep neural network (DNN) classifies input data is critical for interpretability and trust in AI systems. While existing tools such as SplineCam visualize exact decision boundaries for neural networks with piecewise polynomial activation functions, they do not support smooth activations like Sigmoid and SiLU commonly used in contemporary DNNs. SigmaCam addresses this gap by introducing a computationally efficient, theoretically exact recursive algorithm capable of generating decision boundaries for Multi-Layer Perceptrons (MLPs) employing smooth nonlinear activation functions. SigmaCam extends previous visualization methods to a broader class of activations, allowing precise visualization of decision boundaries across various data domains and network architectures, significantly enhancing model interpretability and transparency.
 
@@ -80,7 +82,7 @@ imageio-ffmpeg
 
 Clone the repository:
 ```bash
-git clone https://github.com/YourUsername/SigmaCam.git
+git clone https://github.com/Nikkat-Afrin/SigmaCam.git
 cd SigmaCam
 ```
 
@@ -113,11 +115,12 @@ It is optimized for GPU acceleration and efficiently computes exact boundaries v
 If you find SigmaCam helpful, please cite our paper:
 
 ```latex
-@inproceedings{anonymous2025sigmacam,
+@inproceedings{afrin2025sigmacam,
   title={SigmaCam: Exact Decision Boundary Extraction for DNNs with Smooth Nonlinearities},
-  author={Anonymous},
+  author={Afrin, Nikkat and others},
   booktitle={Proceedings of the International Joint Conference on Neural Networks (IJCNN)},
   year={2025},
+  publisher={IEEE},
 }
 ```
 
