@@ -4,11 +4,11 @@
 
 ### 📄 Published at IEEE IJCNN 2025 · First-author research
 
-[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Read%20the%20Paper-00629B?logo=ieee&logoColor=white)](ADD_IEEE_XPLORE_LINK_HERE)
+[![Paper](https://img.shields.io/badge/Paper-IJCNN%202025%20(PDF)-00629B?logo=ieee&logoColor=white)](paper/IJCNN_2025__SigmaCam.pdf)
 [![Conference](https://img.shields.io/badge/IJCNN-2025-blue)](https://2025.ijcnn.org/)
 [![Follow-up](https://img.shields.io/badge/SigmaCam%2B%2B-Under%20Review%20%40%20IEEE%20TNNLS-orange)]()
 
-**📥 Read the paper on IEEE Xplore →  `ADD_IEEE_XPLORE_LINK_HERE`**
+**📥 [Read the paper (PDF in this repo) →](paper/IJCNN_2025__SigmaCam.pdf)** · IEEE Xplore link coming once the proceedings are indexed
 
 </div>
 
@@ -57,4 +57,4 @@ figures/comparison.png
 `Python` · `PyTorch / TensorFlow` *(confirm which)* · `NumPy` · `Matplotlib` · deep-learning interpretability
 
 ---
-*First-author IEEE IJCNN 2025 publication. Portfolio-facing overview; the implementation, Colab examples, datasets, and paper materials are in this repository.*
+*First-author IEEE IJCNN 2025 publication. Portfolio-facing overview; the implementation, Colab exa
