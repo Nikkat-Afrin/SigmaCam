@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use SigmaCam in your research, please cite the IJCNN 2025 paper."
+title: "SigmaCam: Exact Decision Boundary Extraction for DNNs with Smooth Nonlinearities"
+authors:
+  - family-names: Afrin
+    given-names: Nikkat
+type: software
+repository-code: "https://github.com/Nikkat-Afrin/SigmaCam"
+preferred-citation:
+  type: conference-paper
+  title: "SigmaCam: Exact Decision Boundary Extraction for DNNs with Smooth Nonlinearities"
+  authors:
+    - family-names: Afrin
+      given-names: Nikkat
+  collection-title: "Proceedings of the International Joint Conference on Neural Networks (IJCNN)"
+  year: 2025
+  publisher:
+    name: IEEE
