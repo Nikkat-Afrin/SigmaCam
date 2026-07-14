@@ -1,12 +1,12 @@
 # SigmaCam: Exact Decision Boundary Extraction for DNNs with Smooth Nonlinearities
 
-[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-IJCNN%202025-00629B?logo=ieee&logoColor=white)](ADD_IEEE_XPLORE_LINK)
+[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-IJCNN%202025-00629B?logo=ieee&logoColor=white)](paper/IJCNN_2025__SigmaCam.pdf)
 [![Conference](https://img.shields.io/badge/IJCNN-2025-blue)](https://2025.ijcnn.org/)
 
-### 📄 Published at **IEEE IJCNN 2025** — **[Read the paper on IEEE Xplore →](ADD_IEEE_XPLORE_LINK)**  ·  [Interactive Colab examples ↓](#examples)
+### 📄 Published at **IEEE IJCNN 2025** — **[Read the paper (IJCNN 2025 PDF) →](paper/IJCNN_2025__SigmaCam.pdf)**  ·  [Interactive Colab examples ↓](#examples)
 > *Follow-up work **SigmaCam++** is under review at IEEE TNNLS.*
 
-<img src="YOUR_MAIN_IMAGE_LINK_HERE" width="100%">
+<img src="assets/spiral_sigmoid_sigmacam.gif" width="100%">
 
 Fig: Decision boundary extraction using SigmaCam for a spiral dataset demonstrating clear and smooth decision contours using Sigmoid and SiLU activations.
 
@@ -14,7 +14,7 @@ Fig: Decision boundary extraction using SigmaCam for a spiral dataset demonstrat
 
 **Abstract:** Understanding how a trained deep neural network (DNN) classifies input data is critical for interpretability and trust in AI systems. While existing tools such as SplineCam visualize exact decision boundaries for neural networks with piecewise polynomial activation functions, they do not support smooth activations like Sigmoid and SiLU commonly used in contemporary DNNs. SigmaCam addresses this gap by introducing a computationally efficient, theoretically exact recursive algorithm capable of generating decision boundaries for Multi-Layer Perceptrons (MLPs) employing smooth nonlinear activation functions. SigmaCam extends previous visualization methods to a broader class of activations, allowing precise visualization of decision boundaries across various data domains and network architectures, significantly enhancing model interpretability and transparency.
 
-/assets/spiral%20sigmoid%20sigmacam.mp4![SigmaCam in Action](/assets/spiral%20sigmoid%20sigmacam.mp4)
+**[▶ Watch the full-resolution demo video](assets/spiral%20sigmoid%20sigmacam.mp4)**
 
 **Video:** SigmaCam visualization of decision boundaries evolving during training of a neural network with SiLU activations on a spiral dataset. Observe how the decision boundary smoothly adapts to the learned representation.
 
