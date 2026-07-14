@@ -1,6 +1,6 @@
 # SigmaCam: Exact Decision Boundary Extraction for DNNs with Smooth Nonlinearities
 
-[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-IJCNN%202025-00629B?logo=ieee&logoColor=white)](paper/IJCNN_2025__SigmaCam.pdf)
+[![CI](https://github.com/Nikkat-Afrin/SigmaCam/actions/workflows/ci.yml/badge.svg)](https://github.com/Nikkat-Afrin/SigmaCam/actions/workflows/ci.yml) [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-IJCNN%202025-00629B?logo=ieee&logoColor=white)](paper/IJCNN_2025__SigmaCam.pdf)
 [![Conference](https://img.shields.io/badge/IJCNN-2025-blue)](https://2025.ijcnn.org/)
 
 ### 📄 Published at **IEEE IJCNN 2025** — **[Read the paper (IJCNN 2025 PDF) →](paper/IJCNN_2025__SigmaCam.pdf)**  ·  [Interactive Colab examples ↓](#examples)

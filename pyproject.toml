@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sigmacam"
+version = "0.1.0"
+description = "SigmaCam: exact decision-boundary extraction for DNNs with smooth nonlinearities (IEEE IJCNN 2025)"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Nikkat Afrin" }]
+requires-python = ">=3.9"
+dependencies = [
+    "torch",
+    "numpy",
+    "matplotlib",
+    "imageio",
+    "imageio-ffmpeg",
+]
+keywords = ["interpretability", "decision-boundary", "deep-learning", "visualization"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Repository = "https://github.com/Nikkat-Afrin/SigmaCam"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["sigmacam"]

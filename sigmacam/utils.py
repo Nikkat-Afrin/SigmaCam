@@ -43,9 +43,10 @@ def get_mgrid(domain, grid_size=100):
     ys = np.linspace(y_min, y_max, grid_size)
     X, Y = np.meshgrid(xs, ys)
     pts2d = np.stack([X.ravel(), Y.ravel()], axis=-1)
-    # back-project
+    # back-project (cast to the domain's dtype so float32 models and
+    # float64 meshgrids can't collide in downstream matmuls)
     P_pinv = torch.linalg.pinv(T)
-    pts_nd = (torch.from_numpy(pts2d) @ P_pinv.T) + x0
+    pts_nd = (torch.from_numpy(pts2d).to(domain.dtype) @ P_pinv.T) + x0
     # mask outside polygon
     mask = Path(domain_2d).contains_points(pts2d)
     grid_points = pts_nd[mask]

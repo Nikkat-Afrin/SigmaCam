@@ -23,13 +23,13 @@ def compute_boundaries(NN, domain: torch.Tensor, grid_size=200):
     Z_flat[mask.ravel()] = outputs
     Z = Z_flat.reshape(X.shape)
     # Threshold at 0.5 to find boundary
+    import matplotlib
     import matplotlib.pyplot as plt
-    cs = plt.contour(X, Y, Z, levels=[0.5], colors='red')
-    # Extract lines
-    lines = []
-    for collection in cs.collections:
-        for path in collection.get_paths():
-            lines.append(path.vertices)
-    plt.close()
+    fig, ax = plt.subplots()
+    cs = ax.contour(X, Y, Z, levels=[0.5], colors='red')
+    # Extract contour segments. `allsegs` works on every matplotlib version;
+    # the old `cs.collections` API was deprecated in 3.8 and removed in 3.10.
+    lines = [seg for level_segs in cs.allsegs for seg in level_segs if len(seg)]
+    plt.close(fig)
     regions = {'X': X, 'Y': Y, 'Z': Z}
     return regions, lines
