@@ -6,18 +6,9 @@
 ### 📄 Published at **IEEE IJCNN 2025** - **[Read on IEEE Xplore →](https://ieeexplore.ieee.org/abstract/document/11227622)**  ·  [PDF in this repo](paper/IJCNN_2025__SigmaCam.pdf)  ·  [Slides](presentation/SigmaCam_v1.pdf)  ·  [Interactive Colab examples ↓](#examples)
 
 
-<table>
-<tr>
-<td width="50%"><img src="assets/spiral_silu_sigmacam.gif" width="100%"></td>
-<td width="50%"><img src="assets/spiral_sigmoid_sigmacam.gif" width="100%"></td>
-</tr>
-<tr>
-<td align="center"><b>SiLU</b> MLP learning the spiral (best performing)</td>
-<td align="center"><b>Sigmoid</b> MLP on the same task</td>
-</tr>
-</table>
+<img src="assets/spiral_sigmoid_sigmacam.gif" width="100%">
 
-Fig: Exact decision-boundary extraction with SigmaCam while an MLP trains on the two-spiral dataset. The SiLU network (left) converges to a cleaner, smoother boundary than Sigmoid (right); both boundaries are extracted exactly, not sampled.
+Fig: Exact decision-boundary extraction with SigmaCam while an MLP trains on the two-spiral dataset. Boundaries are extracted exactly, not sampled. SiLU is the best-performing activation - see the SiLU spiral Colab notebooks below for the full animation.
 
 #### Authors: Nikkat Afrin (first author) *et al.* - IEEE IJCNN 2025
 
