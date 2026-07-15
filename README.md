@@ -1,14 +1,23 @@
 # SigmaCam: Exact Decision Boundary Extraction for DNNs with Smooth Nonlinearities
 
-[![CI](https://github.com/Nikkat-Afrin/SigmaCam/actions/workflows/ci.yml/badge.svg)](https://github.com/Nikkat-Afrin/SigmaCam/actions/workflows/ci.yml) [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-IJCNN%202025-00629B?logo=ieee&logoColor=white)](paper/IJCNN_2025__SigmaCam.pdf)
+[![CI](https://github.com/Nikkat-Afrin/SigmaCam/actions/workflows/ci.yml/badge.svg)](https://github.com/Nikkat-Afrin/SigmaCam/actions/workflows/ci.yml) [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-IJCNN%202025-00629B?logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/abstract/document/11227622)
 [![Conference](https://img.shields.io/badge/IJCNN-2025-blue)](https://2025.ijcnn.org/)
 
-### 📄 Published at **IEEE IJCNN 2025** - **[Read the paper (IJCNN 2025 PDF) →](paper/IJCNN_2025__SigmaCam.pdf)**  ·  [Interactive Colab examples ↓](#examples)
+### 📄 Published at **IEEE IJCNN 2025** - **[Read on IEEE Xplore →](https://ieeexplore.ieee.org/abstract/document/11227622)**  ·  [PDF in this repo](paper/IJCNN_2025__SigmaCam.pdf)  ·  [Slides](presentation/SigmaCam_v1.pdf)  ·  [Interactive Colab examples ↓](#examples)
 
 
-<img src="assets/spiral_sigmoid_sigmacam.gif" width="100%">
+<table>
+<tr>
+<td width="50%"><img src="assets/spiral_silu_sigmacam.gif" width="100%"></td>
+<td width="50%"><img src="assets/spiral_sigmoid_sigmacam.gif" width="100%"></td>
+</tr>
+<tr>
+<td align="center"><b>SiLU</b> MLP learning the spiral (best performing)</td>
+<td align="center"><b>Sigmoid</b> MLP on the same task</td>
+</tr>
+</table>
 
-Fig: Decision boundary extraction using SigmaCam for a spiral dataset demonstrating clear and smooth decision contours using Sigmoid and SiLU activations.
+Fig: Exact decision-boundary extraction with SigmaCam while an MLP trains on the two-spiral dataset. The SiLU network (left) converges to a cleaner, smoother boundary than Sigmoid (right); both boundaries are extracted exactly, not sampled.
 
 #### Authors: Nikkat Afrin (first author) *et al.* - IEEE IJCNN 2025
 
@@ -26,6 +35,8 @@ Examples are available in the `./examples` folder, with Google Colab notebooks p
 | :---- | :---- | :---- | :---- |
 | MLP (Sigmoid) | Spiral Dataset | spiral_sigmoid_sigmacam.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hIumz2lmjULSWqy7EDZc0LijIg1UhgQh?usp=sharing) |
 | MLP (Sigmoid) | MNIST (Digit 2 vs 3) | mnist_binary.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15-lAqQua9Q5oYl2NJiS0RL86efbN7Chs?usp=sharing) |
+| MLP (SiLU) | Spiral Dataset | spiral_silu_sigmacam.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dfqAOrG8k9gdpTChKLPTx-TqPJ09S1Li) |
+| MLP (SiLU) | Spiral (training animation) | spiral_silu_animation.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ID4rI6GEoofKSnnEIhPVwv9g5NLYCFkG) |
 | MLP (SiLU) | PneumoniaMNIST | pneumonia_mnist.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/188trnP4XmtNIuvsougGMfQKzEWu3XM1U?usp=sharing) |
 | MLP (SiLU) | Synthetic 3D Sphere | sphere_classification.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1twiGdHsaZ6H4yz4cZuAWw8HqkHmbZqDF?usp=sharing) |
 | MLP (SiLU) | Man Face | man_face_SiLU_2D_INR.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gJ4fRKg4pp7zMuJNjRXXMIgvHce_v4D1?usp=sharing) |
@@ -121,6 +132,7 @@ If you find SigmaCam helpful, please cite our paper:
   booktitle={Proceedings of the International Joint Conference on Neural Networks (IJCNN)},
   year={2025},
   publisher={IEEE},
+  url={https://ieeexplore.ieee.org/abstract/document/11227622},
 }
 ```
 

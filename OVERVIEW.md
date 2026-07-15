@@ -4,16 +4,15 @@
 
 ### 📄 Published at IEEE IJCNN 2025 · First-author research
 
-[![Paper](https://img.shields.io/badge/Paper-IJCNN%202025%20(PDF)-00629B?logo=ieee&logoColor=white)](paper/IJCNN_2025__SigmaCam.pdf)
+[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Read%20the%20Paper-00629B?logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/abstract/document/11227622)
 [![Conference](https://img.shields.io/badge/IJCNN-2025-blue)](https://2025.ijcnn.org/)
 [![Follow-up](https://img.shields.io/badge/SigmaCam%2B%2B-Under%20Review%20%40%20IEEE%20TNNLS-orange)]()
 
-**📥 [Read the paper (PDF in this repo) →](paper/IJCNN_2025__SigmaCam.pdf)** · IEEE Xplore link coming once the proceedings are indexed
+**📥 [Read the paper on IEEE Xplore →](https://ieeexplore.ieee.org/abstract/document/11227622)** · [PDF in this repo](paper/IJCNN_2025__SigmaCam.pdf) · [Slides](presentation/SigmaCam_v1.pdf)
 
 </div>
 
 ---
-
 
 ## 🔬 Overview
 **SigmaCam** is a method for **extracting the *exact* decision boundary of deep neural networks** - a contribution to neural-network **interpretability and verification**. Where most explainability tools approximate or sample where a model changes its prediction, SigmaCam targets the boundary precisely, enabling more faithful analysis of how a trained network separates classes.
@@ -22,39 +21,35 @@
 - **Role:** First author.
 - **Follow-up:** **SigmaCam++** - extended method, submitted to **IEEE Transactions on Neural Networks and Learning Systems (TNNLS)** *(under review)*.
 
-> `ADD_ABSTRACT_HERE` - paste the paper abstract (2-4 sentences) so readers get the precise contribution and results.
+> **Abstract.** While existing tools such as SplineCam visualize exact decision boundaries for neural networks with piecewise polynomial activation functions, they do not support smooth activations like Sigmoid and SiLU commonly used in contemporary DNNs. SigmaCam addresses this gap with a computationally efficient, theoretically exact recursive algorithm that generates decision boundaries for MLPs employing smooth nonlinear activation functions, enabling precise visualization across data domains and architectures.
 
 ## 🎯 Why it matters
 - **Interpretability:** exact boundaries reveal *why* and *where* a model makes decisions, beyond saliency-map approximations.
 - **Robustness / verification:** decision-boundary geometry relates directly to adversarial vulnerability and model reliability.
 - **Research depth:** a peer-reviewed IEEE contribution demonstrates the ability to formulate a novel method, implement it, and validate it rigorously.
 
-## 🧩 Contributions (fill from paper)
-- `ADD_CONTRIBUTION_1` (e.g., the exact-boundary extraction algorithm and its formulation)
-- `ADD_CONTRIBUTION_2` (e.g., complexity / guarantees vs. approximate methods)
-- `ADD_KEY_RESULT` (e.g., datasets/architectures evaluated and headline metrics)
+## 🧩 Contributions
+- A theoretically exact, recursive decision-boundary extraction algorithm for MLPs with **smooth** activations (Sigmoid, SiLU) - a class prior exact methods (e.g., SplineCam) do not cover.
+- A computationally efficient PyTorch implementation that scales to real inputs via 2-D PCA projections of high-dimensional domains.
+- Validation across synthetic (spirals, spheres), image (MNIST, PneumoniaMNIST), and implicit-neural-representation domains, with interactive Colab notebooks for each.
 
-## 📊 Figures
-Add 1-2 key figures from the paper here (e.g., extracted boundary visualization, comparison vs. baselines):
-```
-figures/boundary_example.png
-figures/comparison.png
-```
+## 📊 See it in action
+The repo includes exact-boundary training animations for SiLU and Sigmoid MLPs on the two-spiral task (`assets/`), plus 8 Colab notebooks in the [README examples table](README.md#examples).
 
 ## 📚 Citation
 ```bibtex
 @inproceedings{afrin2025sigmacam,
-  title     = {SigmaCam: Exact Decision Boundary Extraction for Deep Neural Networks},
-  author    = {Afrin, Nikkat and ADD_COAUTHORS},
-  booktitle = {International Joint Conference on Neural Networks (IJCNN)},
+  title     = {SigmaCam: Exact Decision Boundary Extraction for DNNs with Smooth Nonlinearities},
+  author    = {Afrin, Nikkat and others},
+  booktitle = {Proceedings of the International Joint Conference on Neural Networks (IJCNN)},
   year      = {2025},
   publisher = {IEEE},
-  doi       = {ADD_DOI}
+  url       = {https://ieeexplore.ieee.org/abstract/document/11227622}
 }
 ```
 
 ## 🛠️ Tech stack
-`Python` · `PyTorch / TensorFlow` *(confirm which)* · `NumPy` · `Matplotlib` · deep-learning interpretability
+`Python` · `PyTorch` · `NumPy` · `Matplotlib` · deep-learning interpretability
 
 ---
-*First-author IEEE IJCNN 2025 publication. Portfolio-facing overview; the implementation, Colab exa
+*First-author IEEE IJCNN 2025 publication. Portfolio-facing overview; implementation, tests, and Colab examples live in this repository.*
