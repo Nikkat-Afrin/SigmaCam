@@ -1,6 +1,6 @@
 <div align="center">
 
-# SigmaCam — Exact Decision Boundary Extraction for Deep Neural Networks
+# SigmaCam - Exact Decision Boundary Extraction for Deep Neural Networks
 
 ### 📄 Published at IEEE IJCNN 2025 · First-author research
 
@@ -16,13 +16,13 @@
 
 
 ## 🔬 Overview
-**SigmaCam** is a method for **extracting the *exact* decision boundary of deep neural networks** — a contribution to neural-network **interpretability and verification**. Where most explainability tools approximate or sample where a model changes its prediction, SigmaCam targets the boundary precisely, enabling more faithful analysis of how a trained network separates classes.
+**SigmaCam** is a method for **extracting the *exact* decision boundary of deep neural networks** - a contribution to neural-network **interpretability and verification**. Where most explainability tools approximate or sample where a model changes its prediction, SigmaCam targets the boundary precisely, enabling more faithful analysis of how a trained network separates classes.
 
 - **Venue:** International Joint Conference on Neural Networks (**IJCNN 2025**), IEEE.
 - **Role:** First author.
-- **Follow-up:** **SigmaCam++** — extended method, submitted to **IEEE Transactions on Neural Networks and Learning Systems (TNNLS)** *(under review)*.
+- **Follow-up:** **SigmaCam++** - extended method, submitted to **IEEE Transactions on Neural Networks and Learning Systems (TNNLS)** *(under review)*.
 
-> `ADD_ABSTRACT_HERE` — paste the paper abstract (2–4 sentences) so readers get the precise contribution and results.
+> `ADD_ABSTRACT_HERE` - paste the paper abstract (2-4 sentences) so readers get the precise contribution and results.
 
 ## 🎯 Why it matters
 - **Interpretability:** exact boundaries reveal *why* and *where* a model makes decisions, beyond saliency-map approximations.
@@ -35,7 +35,7 @@
 - `ADD_KEY_RESULT` (e.g., datasets/architectures evaluated and headline metrics)
 
 ## 📊 Figures
-Add 1–2 key figures from the paper here (e.g., extracted boundary visualization, comparison vs. baselines):
+Add 1-2 key figures from the paper here (e.g., extracted boundary visualization, comparison vs. baselines):
 ```
 figures/boundary_example.png
 figures/comparison.png

@@ -3,14 +3,14 @@
 [![CI](https://github.com/Nikkat-Afrin/SigmaCam/actions/workflows/ci.yml/badge.svg)](https://github.com/Nikkat-Afrin/SigmaCam/actions/workflows/ci.yml) [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-IJCNN%202025-00629B?logo=ieee&logoColor=white)](paper/IJCNN_2025__SigmaCam.pdf)
 [![Conference](https://img.shields.io/badge/IJCNN-2025-blue)](https://2025.ijcnn.org/)
 
-### 📄 Published at **IEEE IJCNN 2025** — **[Read the paper (IJCNN 2025 PDF) →](paper/IJCNN_2025__SigmaCam.pdf)**  ·  [Interactive Colab examples ↓](#examples)
+### 📄 Published at **IEEE IJCNN 2025** - **[Read the paper (IJCNN 2025 PDF) →](paper/IJCNN_2025__SigmaCam.pdf)**  ·  [Interactive Colab examples ↓](#examples)
 
 
 <img src="assets/spiral_sigmoid_sigmacam.gif" width="100%">
 
 Fig: Decision boundary extraction using SigmaCam for a spiral dataset demonstrating clear and smooth decision contours using Sigmoid and SiLU activations.
 
-#### Authors: Nikkat Afrin (first author) *et al.* — IEEE IJCNN 2025
+#### Authors: Nikkat Afrin (first author) *et al.* - IEEE IJCNN 2025
 
 **Abstract:** Understanding how a trained deep neural network (DNN) classifies input data is critical for interpretability and trust in AI systems. While existing tools such as SplineCam visualize exact decision boundaries for neural networks with piecewise polynomial activation functions, they do not support smooth activations like Sigmoid and SiLU commonly used in contemporary DNNs. SigmaCam addresses this gap by introducing a computationally efficient, theoretically exact recursive algorithm capable of generating decision boundaries for Multi-Layer Perceptrons (MLPs) employing smooth nonlinear activation functions. SigmaCam extends previous visualization methods to a broader class of activations, allowing precise visualization of decision boundaries across various data domains and network architectures, significantly enhancing model interpretability and transparency.
 
