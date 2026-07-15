@@ -4,7 +4,7 @@
 [![Conference](https://img.shields.io/badge/IJCNN-2025-blue)](https://2025.ijcnn.org/)
 
 ### 📄 Published at **IEEE IJCNN 2025** — **[Read the paper (IJCNN 2025 PDF) →](paper/IJCNN_2025__SigmaCam.pdf)**  ·  [Interactive Colab examples ↓](#examples)
-> *Follow-up work **SigmaCam++** is under review at IEEE TNNLS.*
+
 
 <img src="assets/spiral_sigmoid_sigmacam.gif" width="100%">
 
