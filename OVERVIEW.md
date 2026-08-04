@@ -6,7 +6,6 @@
 
 [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Read%20the%20Paper-00629B?logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/abstract/document/11227622)
 [![Conference](https://img.shields.io/badge/IJCNN-2025-blue)](https://2025.ijcnn.org/)
-[![Follow-up](https://img.shields.io/badge/SigmaCam%2B%2B-Under%20Review%20%40%20IEEE%20TNNLS-orange)]()
 
 **📥 [Read the paper on IEEE Xplore →](https://ieeexplore.ieee.org/abstract/document/11227622)** · [PDF in this repo](paper/IJCNN_2025__SigmaCam.pdf) · [Slides](presentation/SigmaCam_v1.pdf)
 
@@ -19,7 +18,6 @@
 
 - **Venue:** International Joint Conference on Neural Networks (**IJCNN 2025**), IEEE.
 - **Role:** First author.
-- **Follow-up:** **SigmaCam++** - extended method, submitted to **IEEE Transactions on Neural Networks and Learning Systems (TNNLS)** *(under review)*.
 
 > **Abstract.** While existing tools such as SplineCam visualize exact decision boundaries for neural networks with piecewise polynomial activation functions, they do not support smooth activations like Sigmoid and SiLU commonly used in contemporary DNNs. SigmaCam addresses this gap with a computationally efficient, theoretically exact recursive algorithm that generates decision boundaries for MLPs employing smooth nonlinear activation functions, enabling precise visualization across data domains and architectures.
 
